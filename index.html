@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Luis Adam's WDD 231 student portfolio and web certificate courses.">
+    <meta name="author" content="Luis Adam">
+    <meta name="theme-color" content="#123047">
+
+    <title>Home | Luis Adam</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Luis Adam home">
+            <img src="images/house-door-fill.svg" alt="" width="24" height="24">
+            <span>Sir Luis Site Title</span>
+        </a>
+
+        <button id="ham-btn" class="hamburger" type="button" aria-label="Open navigation" aria-expanded="false"
+            aria-controls="nav-bar">
+        </button>
+    </header>
+
+    <nav id="nav-bar" class="navigation" aria-label="Main navigation">
+        <ul>
+            <li class="current"><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="#chamber-project">Chamber Project</a></li>
+            <li><a href="#final-project">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="container">
+            <section class="about card" aria-labelledby="about-title">
+                <h2 id="about-title" class="section-heading">About Me</h2>
+                <div class="card-content">
+                    <p>
+                        I have a basic understanding of web development, with experience
+                        in HTML, CSS, and JavaScript. I can create and style webpages,
+                        build responsive layouts, work with forms, and add basic
+                        interactivity using JavaScript. I have also used Git and GitHub
+                        to manage and publish my projects. Through my studies, I have
+                        developed practical skills in building websites and learned
+                        how to use tools such as VS Code and Chrome DevTools.
+                    </p>
+                </div>
+            </section>
+
+            <section class="student-card card" aria-labelledby="photo-title">
+                <h2 id="photo-title" class="section-heading">Student Photo</h2>
+                <div class="photo-placeholder">
+                    <img src="images/profile.jpg" alt="Sir Luis Adam picture">
+                </div>
+            </section>
+        </div>
+
+        <section class="courses" aria-labelledby="courses-title">
+            <h2 id="courses-title" class="section-heading">Web Certificate Courses</h2>
+
+            <div class="course-filters" role="group" aria-label="Filter courses">
+                <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All</button>
+                <button class="filter-button" type="button" data-filter="cse" aria-pressed="false">CSE</button>
+                <button class="filter-button" type="button" data-filter="wdd" aria-pressed="false">WDD</button>
+            </div>
+
+            <ul class="course-list" aria-label="Course list">
+                <li data-category="wdd">WDD 130</li>
+                <li data-category="wdd">WDD 131</li>
+                <li data-category="wdd">WDD 231</li>
+            </ul>
+
+            <p class="credits">
+                The total credits for courses listed above is <strong>6</strong>.
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <nav class="social-links" aria-label="Social media">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <img src="images/facebook.svg" alt="" width="24" height="24">
+            </a>
+            <a href="https://github.com/Luisadam24/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <img src="images/github.svg" alt="" width="24" height="24">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <img src="images/linkedin.svg" alt="" width="24" height="24">
+            </a>
+        </nav>
+
+        <p>&copy; <span id="currentyear"></span> • Sir Luis Adam • Harare, Zimbabwe</p>
+        <p>Last modified: <time id="last-modified"></time></p>
+    </footer>
+</body>
+
+</html>
