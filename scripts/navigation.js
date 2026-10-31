@@ -20,13 +20,12 @@ if (year) {
     year.textContent = new Date().getFullYear();
 }
 
-const lastModified = document.querySelector("#last-modified");
-if (lastModified) {
-    const modifiedDate = new Date(document.lastModified);
-    lastModified.textContent = Number.isNaN(modifiedDate.getTime())
-        ? "Unavailable"
-        : modifiedDate.toLocaleString();
-}
+const lastModified = document.querySelector("#lastModified");
+
+const date = new Date(document.lastModified);
+
+lastModified.dateTime = date.toISOString();
+lastModified.textContent = date.toLocaleString();
 
 const filterButtons = document.querySelectorAll(".filter-button");
 const courses = document.querySelectorAll(".course-list li");
