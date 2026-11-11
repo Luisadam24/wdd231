@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="12" fill="#f3eae3"/>
+  <path d="M29 33h42a8 8 0 0 1 8 8v43H37a8 8 0 0 1-8-8z" fill="#fffaf5" stroke="#a0523a" stroke-width="3"/>
+  <path d="M79 43h11v41a8 8 0 0 1-8 8H37" fill="none" stroke="#a0523a" stroke-width="3"/>
+  <path d="M40 49h24M40 57h25M40 65h19" stroke="#71856f" stroke-linecap="round" stroke-width="3"/>
+  <text x="60" y="105" text-anchor="middle" fill="#654438" font-family="Arial,sans-serif" font-size="8" font-weight="700" letter-spacing=".55">HARARE HOUSE PRESS</text>
+</svg>

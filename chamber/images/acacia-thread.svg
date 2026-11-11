@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="12" fill="#f4eee4"/>
+  <circle cx="60" cy="50" r="30" fill="#c66d4f"/>
+  <path d="M45 65V43l15-13 15 13v22h-9V48h-12v17z" fill="#fffaf1"/>
+  <path d="M55 65V52h10v13" fill="#c66d4f"/>
+  <text x="60" y="99" text-anchor="middle" fill="#4b382d" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">ACACIA</text>
+</svg>

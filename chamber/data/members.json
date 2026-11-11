@@ -1,0 +1,79 @@
+[
+    {
+        "name": "Acacia & Thread",
+        "address": "18 Fife Avenue, Avenues, Harare",
+        "phone": "+263 24 200 0101",
+        "website": "https://acaciaandthread.example.com",
+        "image": "acacia-thread.svg",
+        "membershipLevel": 3,
+        "membershipName": "Gold",
+        "category": "Design & craft",
+        "description": "Thoughtful Zimbabwean textiles and homewares, made to be lived in."
+    },
+    {
+        "name": "Baobab Solar Co.",
+        "address": "42 Lavenham Road, Highlands, Harare",
+        "phone": "+263 24 200 0102",
+        "website": "https://baobabsolar.example.com",
+        "image": "baobab-solar.svg",
+        "membershipLevel": 2,
+        "membershipName": "Silver",
+        "category": "Clean energy",
+        "description": "Practical solar and backup power for homes and small businesses."
+    },
+    {
+        "name": "Common Ground Café",
+        "address": "7 Samora Machel Avenue, CBD, Harare",
+        "phone": "+263 24 200 0103",
+        "website": "https://commongroundcafe.example.com",
+        "image": "common-ground.svg",
+        "membershipLevel": 1,
+        "membershipName": "Member",
+        "category": "Food & hospitality",
+        "description": "A welcoming neighbourhood café serving local coffee and seasonal plates."
+    },
+    {
+        "name": "Greenway Garden Studio",
+        "address": "23 Enterprise Road, Newlands, Harare",
+        "phone": "+263 24 200 0104",
+        "website": "https://greenwaygarden.example.com",
+        "image": "greenway-garden.svg",
+        "membershipLevel": 2,
+        "membershipName": "Silver",
+        "category": "Landscaping",
+        "description": "Garden design and native planting for greener neighbourhoods."
+    },
+    {
+        "name": "Harare House Press",
+        "address": "11 Arundel Road, Mount Pleasant, Harare",
+        "phone": "+263 24 200 0105",
+        "website": "https://hararehousepress.example.com",
+        "image": "harare-house-press.svg",
+        "membershipLevel": 3,
+        "membershipName": "Gold",
+        "category": "Arts & publishing",
+        "description": "An independent publisher bringing fresh Zimbabwean stories to readers."
+    },
+    {
+        "name": "Mukuvisi Makers",
+        "address": "6 Glenara Avenue, Eastlea, Harare",
+        "phone": "+263 24 200 0106",
+        "website": "https://mukuvisimakers.example.com",
+        "image": "mukuvisi-makers.svg",
+        "membershipLevel": 1,
+        "membershipName": "Member",
+        "category": "Creative services",
+        "description": "A small creative workshop for brands, packaging and good ideas."
+    },
+    {
+        "name": "Open Road Logistics",
+        "address": "15 Coventry Road, Workington, Harare",
+        "phone": "+263 24 200 0107",
+        "website": "https://openroadlogistics.example.com",
+        "image": "open-road.svg",
+        "membershipLevel": 2,
+        "membershipName": "Silver",
+        "category": "Transport & trade",
+        "description": "Friendly, reliable delivery support for growing local businesses."
+    }
+]

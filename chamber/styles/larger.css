@@ -1,0 +1,162 @@
+@media (min-width: 640px) {
+    .header-inner {
+        min-height: 84px;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .primary-navigation,
+    .primary-navigation.is-open {
+        position: static;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .primary-navigation a {
+        padding: 9px 13px;
+        border: 0;
+        border-radius: 3px;
+        font-size: .87rem;
+    }
+
+    .primary-navigation a[aria-current="page"] {
+        background: rgb(255 255 255 / 10%);
+        color: var(--gold);
+    }
+
+    .intro {
+        padding: 72px 0 52px;
+    }
+
+    .intro-copy {
+        margin-top: 21px;
+        font-size: 1.08rem;
+    }
+
+    .directory-section {
+        padding-top: 35px;
+        padding-bottom: 69px;
+    }
+
+    .sample-note {
+        display: block;
+    }
+
+    .directory-toolbar {
+        padding: 13px;
+    }
+
+    .search-box {
+        max-width: 360px;
+    }
+
+    .directory.grid-view {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 17px;
+    }
+
+    .member-card-top {
+        padding: 19px 19px 15px;
+    }
+
+    .member-description {
+        padding-right: 19px;
+        padding-left: 19px;
+    }
+
+    .member-details {
+        padding-right: 19px;
+        padding-left: 19px;
+    }
+
+    .membership-banner {
+        grid-template-columns: auto minmax(0, 1fr) auto;
+        align-items: center;
+        gap: 22px;
+        padding: 32px;
+    }
+
+    .contact-link {
+        justify-self: end;
+    }
+
+    .footer-inner {
+        grid-template-columns: 1.15fr 1fr 1fr;
+        gap: 35px;
+        padding-top: 8px;
+        padding-bottom: 31px;
+    }
+}
+
+@media (min-width: 960px) {
+    .intro {
+        padding-top: 82px;
+        padding-bottom: 65px;
+    }
+
+    .intro-copy {
+        max-width: 530px;
+    }
+
+    .directory.grid-view {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .member-card-top {
+        gap: 16px;
+        padding: 20px 20px 15px;
+    }
+
+    .member-logo {
+        width: 82px;
+        height: 82px;
+    }
+
+    .member-description {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .member-details {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .directory.list-view .member-card {
+        grid-template-columns: minmax(0, 1fr) 1.05fr;
+        align-items: center;
+    }
+
+    .directory.list-view .member-card-top {
+        padding: 14px 16px 12px;
+    }
+
+    .directory.list-view .member-description {
+        grid-column: 1;
+        padding: 0 16px 14px;
+    }
+
+    .directory.list-view .member-details {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+        justify-content: flex-start;
+        padding: 14px 18px;
+        border-left: 1px solid var(--line);
+    }
+
+    .membership-banner {
+        padding: 38px 42px;
+    }
+
+    .site-footer {
+        padding-right: max(24px, calc((100% - 1160px) / 2));
+        padding-left: max(24px, calc((100% - 1160px) / 2));
+    }
+}

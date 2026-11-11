@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="12" fill="#edf2e6"/>
+  <circle cx="60" cy="46" r="27" fill="#e7b44d"/>
+  <path d="M60 25v42M39 46h42M45 31l30 30m0-30L45 61" stroke="#fff9e8" stroke-width="3"/>
+  <path d="M31 76h58v5H31zm7 7h44v3H38z" fill="#306454"/>
+  <text x="60" y="103" text-anchor="middle" fill="#24473c" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1">BAOBAB SOLAR</text>
+</svg>

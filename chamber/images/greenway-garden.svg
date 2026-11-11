@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="12" fill="#edf1e7"/>
+  <path d="M60 70c-1-27 12-40 34-42 0 23-9 38-34 42z" fill="#4e8361"/>
+  <path d="M60 72C59 49 47 37 26 36c0 22 9 36 34 37z" fill="#99aa68"/>
+  <path d="M59 73v-29m1 29 20-27M58 73 39 47" fill="none" stroke="#315744" stroke-linecap="round" stroke-width="3"/>
+  <path d="M38 77h44l-6 13H44z" fill="#b96a48"/>
+  <text x="60" y="105" text-anchor="middle" fill="#3c5543" font-family="Arial,sans-serif" font-size="9" font-weight="700" letter-spacing=".7">GREENWAY</text>
+</svg>

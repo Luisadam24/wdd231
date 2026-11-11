@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="12" fill="#f4ece2"/>
+  <path d="M60 22c-17 0-28 12-28 28 0 12 9 21 28 36 19-15 28-24 28-36 0-16-11-28-28-28z" fill="#5d7660"/>
+  <path d="M60 31v41m-13-28 13 11 13-11M47 55l13 11 13-11" fill="none" stroke="#fff8eb" stroke-linecap="round" stroke-width="3"/>
+  <text x="60" y="99" text-anchor="middle" fill="#3d473a" font-family="Arial,sans-serif" font-size="9" font-weight="700" letter-spacing=".7">COMMON GROUND</text>
+</svg>

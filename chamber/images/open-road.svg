@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="12" fill="#eaf0ee"/>
+  <path d="M35 27h50L68 52h18L42 89l13-29H38z" fill="#c27740"/>
+  <path d="M57 37h14m-27 36h11m8-30h9" stroke="#fff8e9" stroke-linecap="round" stroke-width="3"/>
+  <text x="60" y="106" text-anchor="middle" fill="#274a40" font-family="Arial,sans-serif" font-size="9" font-weight="700" letter-spacing=".8">OPEN ROAD</text>
+</svg>

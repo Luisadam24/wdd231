@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Meet the independent businesses and community partners that make Harare thrive. Explore the Harare Business Circle member directory.">
+    <meta name="author" content="Luis Adam">
+    <meta name="theme-color" content="#173a32">
+    <link rel="canonical" href="https://luisadam24.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Harare Business Circle">
+    <meta property="og:title" content="Member Directory | Harare Business Circle">
+    <meta property="og:description" content="Find local makers, services and community partners in the Harare Business Circle member directory.">
+    <meta property="og:image" content="https://luisadam24.github.io/wdd231/chamber/images/social-card.png">
+    <meta property="og:image:alt" content="Harare Business Circle — Find your people. Grow together.">
+    <meta property="og:url" content="https://luisadam24.github.io/wdd231/chamber/directory.html">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/directory.js" defer></script>
+    <title>Member Directory | Harare Business Circle</title>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to directory</a>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="../index.html" aria-label="Harare Business Circle home">
+                <img src="images/favicon.svg" alt="" width="44" height="44">
+                <span class="brand-copy"><strong>Harare</strong><span>Business Circle</span></span>
+            </a>
+            <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+                <a href="../index.html">Home</a>
+                <a href="#discover">Discover</a>
+                <a href="#directory" aria-current="page">Directory</a>
+                <a href="#membership">Join</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="intro" id="discover" aria-labelledby="page-title">
+            <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> Local business, in good company</p>
+            <h1 id="page-title">Find your people.<br><span>Grow together.</span></h1>
+            <p class="intro-copy">Get to know the local businesses building a brighter Harare. Good work starts with a good introduction.</p>
+        </section>
+
+        <section class="directory-section" id="directory" aria-labelledby="directory-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">The people behind the place</p>
+                    <h2 id="directory-title">Member directory</h2>
+                </div>
+                <p class="sample-note">Student project · sample member listings</p>
+            </div>
+
+            <div class="directory-toolbar">
+                <label class="search-box">
+                    <span class="sr-only">Search members</span>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+                    <input id="member-search" type="search" placeholder="Search businesses" autocomplete="off">
+                </label>
+                <div class="view-controls" role="group" aria-label="Choose directory view">
+                    <button class="view-button is-active" type="button" data-view="grid" aria-pressed="true">
+                        <svg viewBox="0 0 20 20" aria-hidden="true"><rect x="2" y="2" width="6" height="6" rx="1"></rect><rect x="12" y="2" width="6" height="6" rx="1"></rect><rect x="2" y="12" width="6" height="6" rx="1"></rect><rect x="12" y="12" width="6" height="6" rx="1"></rect></svg>
+                        <span>Grid</span>
+                    </button>
+                    <button class="view-button" type="button" data-view="list" aria-pressed="false">
+                        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 4h11M7 10h11M7 16h11"></path><circle cx="3" cy="4" r=".7"></circle><circle cx="3" cy="10" r=".7"></circle><circle cx="3" cy="16" r=".7"></circle></svg>
+                        <span>List</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="results-line">
+                <p id="result-count" aria-live="polite">Loading members…</p>
+                <p class="results-hint">A stronger local economy starts here.</p>
+            </div>
+            <div class="directory grid-view" id="member-directory" aria-live="polite" aria-busy="true"></div>
+            <p class="view-announcement sr-only" id="view-announcement" aria-live="polite"></p>
+        </section>
+
+        <section class="membership-banner" id="membership" aria-labelledby="membership-title">
+            <div class="banner-mark" aria-hidden="true">HBC<span>+</span></div>
+            <div class="banner-copy">
+                <p class="eyebrow">Make a little more room to grow</p>
+                <h2 id="membership-title">Good things happen when Harare works together.</h2>
+                <p>Meet your next collaborator, share what you do and be part of a more connected business community.</p>
+            </div>
+            <a class="contact-link" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a class="brand" href="../index.html" aria-label="Harare Business Circle home">
+                    <img src="images/favicon.svg" alt="" width="40" height="40">
+                    <span class="brand-copy"><strong>Harare</strong><span>Business Circle</span></span>
+                </a>
+                <p>Local connections. Shared progress.</p>
+            </div>
+            <div class="footer-contact">
+                <h2>Say hello</h2>
+                <p>Harare, Zimbabwe</p>
+                <a href="mailto:hello@hararebusinesscircle.example">hello@hararebusinesscircle.example</a>
+            </div>
+            <div class="footer-course">
+                <p>Created by <strong>Luis Adam</strong></p>
+                <p>WDD 231 · Web Frontend Development</p>
+                <p>Last modified <time id="last-modified"></time></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Harare Business Circle</p>
+            <p>Sample directory for a student project</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="12" fill="#efece3"/>
+  <path d="M34 31h52v48H34z" rx="7" fill="#456b5c"/>
+  <path d="m46 64 11-20 11 20m-17-9h13m13 9V44h6c9 0 9 13 0 13h-6" fill="none" stroke="#f4ce8b" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  <text x="60" y="101" text-anchor="middle" fill="#3b4e43" font-family="Arial,sans-serif" font-size="9" font-weight="700" letter-spacing=".8">MUKUVISI</text>
+</svg>
