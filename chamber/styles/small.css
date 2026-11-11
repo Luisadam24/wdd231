@@ -12,7 +12,7 @@
     --muted: #53645d;
     --line: #d9ded8;
     --shadow: 0 12px 34px rgb(24 53 47 / 7%);
-    font-family: "Aptos", "Segoe UI", Arial, sans-serif;
+    font-family: "DM Sans", "Aptos", "Segoe UI", Arial, sans-serif;
     color: var(--ink);
     background: var(--paper);
     font-synthesis: none;
@@ -211,7 +211,7 @@ main {
 
 h1,
 h2 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
     font-weight: 500;
 }
 
@@ -431,7 +431,7 @@ h1 span {
 
 .member-heading h3 {
     color: var(--forest-deep);
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
     font-size: 1.22rem;
     font-weight: 500;
     letter-spacing: -.025em;
@@ -601,7 +601,7 @@ h1 span {
     display: block;
     margin-bottom: 4px;
     color: var(--forest);
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
     font-size: 1.25rem;
     font-weight: 500;
 }
@@ -626,7 +626,7 @@ h1 span {
     border: 1px solid rgb(255 255 255 / 40%);
     border-radius: 50%;
     color: var(--white);
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
     font-size: .9rem;
     letter-spacing: .03em;
 }

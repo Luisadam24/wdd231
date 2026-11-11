@@ -11,9 +11,16 @@ let currentView = "grid";
 document.querySelector("#current-year").textContent = new Date().getFullYear();
 
 const modifiedDate = new Date(document.lastModified);
-document.querySelector("#last-modified").textContent = Number.isNaN(modifiedDate.getTime())
-    ? "Date unavailable"
-    : new Intl.DateTimeFormat("en", { dateStyle: "long" }).format(modifiedDate);
+const lastModified = document.querySelector("#last-modified");
+if (Number.isNaN(modifiedDate.getTime())) {
+    lastModified.textContent = "Date unavailable";
+} else {
+    const year = modifiedDate.getFullYear();
+    const month = String(modifiedDate.getMonth() + 1).padStart(2, "0");
+    const day = String(modifiedDate.getDate()).padStart(2, "0");
+    lastModified.dateTime = `${year}-${month}-${day}`;
+    lastModified.textContent = new Intl.DateTimeFormat("en", { dateStyle: "long" }).format(modifiedDate);
+}
 
 menuToggle.addEventListener("click", () => {
     const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
