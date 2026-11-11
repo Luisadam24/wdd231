@@ -1,0 +1,17 @@
+{"familyName":"Adam",
+"dateMovedIn": "18 January 2023",
+"numberOfFamilyMembers": 8,
+"visitedByBishopric": false,
+"familyMembers": [
+    {"name": "Luis",
+     "gender": "male",
+     "birthDate": "10/06/03"},
+    {"name": "Lincoln Adam",
+     "gender": "male",
+     "birthDate": "24/05/11"},
+    {"name": "Liesel Adam",
+     "gender": "female",
+     "birthDate": "30/05/13"}
+]
+}
+
