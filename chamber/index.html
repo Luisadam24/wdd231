@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Connect with Harare businesses, discover chamber events, and explore opportunities to grow together with Harare Business Circle.">
+    <meta name="author" content="Luis Adam">
+    <meta name="theme-color" content="#173a32">
+    <link rel="canonical" href="https://luisadam24.github.io/wdd231/chamber/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Harare Business Circle">
+    <meta property="og:title" content="Harare Business Circle | Find your people. Grow together.">
+    <meta property="og:description" content="Meet the local businesses building a brighter Harare.">
+    <meta property="og:image" content="https://luisadam24.github.io/wdd231/chamber/images/social-card.png">
+    <meta property="og:image:alt" content="Harare Business Circle — Find your people. Grow together.">
+    <meta property="og:url" content="https://luisadam24.github.io/wdd231/chamber/">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <script src="scripts/home.js" defer></script>
+    <title>Harare Business Circle | Find your people. Grow together.</title>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to home page content</a>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="Harare Business Circle home">
+                <img src="images/favicon.svg" alt="" width="44" height="44">
+                <span class="brand-copy"><strong>Harare</strong><span>Business Circle</span></span>
+            </a>
+            <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="#events">Discover</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html">Join</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="home-hero" aria-labelledby="page-title">
+            <img class="hero-image" src="images/harare-hero.svg" alt="Illustrated Harare skyline, leafy trees, and local storefronts at sunrise." width="1800" height="900" fetchpriority="high">
+            <div class="hero-content">
+                <p class="eyebrow">Harare Business Circle</p>
+                <h1 id="page-title">Find your people.<br><span>Grow together.</span></h1>
+                <p class="hero-copy">Meet the local businesses building a brighter Harare. Make a connection, share what you do, and find room to grow.</p>
+                <a class="hero-cta" href="join.html">Join the chamber <span aria-hidden="true">↗</span></a>
+            </div>
+            <p class="hero-note"><span aria-hidden="true">●</span> Local connections. Shared progress.</p>
+        </section>
+
+        <section class="welcome-note" aria-label="About the chamber">
+            <p class="eyebrow">Good work grows together</p>
+            <p>Harare Business Circle brings local businesses together to build relationships, share opportunities, and strengthen our community.</p>
+        </section>
+
+        <div class="home-grid">
+            <section class="home-panel events-panel" id="events" aria-labelledby="events-title">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Meet, learn, connect</p>
+                        <h2 id="events-title">What's on in Harare</h2>
+                    </div>
+                    <span class="section-mark" aria-hidden="true">01</span>
+                </div>
+                <p class="panel-intro">Chamber events bring business owners and community partners into the same room.</p>
+                <div class="event-list">
+                    <article class="event-item">
+                        <p class="event-label">Coming soon <span aria-hidden="true">·</span> Networking</p>
+                        <h3>Harare Business Breakfast</h3>
+                        <p>Start the day with new introductions, practical ideas, and a little local inspiration.</p>
+                        <p class="event-detail">Date and venue to be announced</p>
+                    </article>
+                    <article class="event-item">
+                        <p class="event-label">Coming soon <span aria-hidden="true">·</span> Small business</p>
+                        <h3>Growing Together Workshop</h3>
+                        <p>Share what works, learn from fellow business owners, and leave with useful next steps.</p>
+                        <p class="event-detail">Date and venue to be announced</p>
+                    </article>
+                </div>
+                <p class="sample-note">Sample event listings for this student project. Details will be updated as events are scheduled.</p>
+            </section>
+
+            <section class="home-panel weather-panel" aria-labelledby="weather-title">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">A little local outlook</p>
+                        <h2 id="weather-title">Harare weather</h2>
+                    </div>
+                    <span class="section-mark" aria-hidden="true">02</span>
+                </div>
+                <div class="current-weather" id="weather-results" aria-live="polite" aria-busy="true">
+                    <img id="current-weather-icon" src="images/weather-placeholder.svg" alt="Weather icon will appear after the forecast loads." width="88" height="88">
+                    <div class="current-weather-copy">
+                        <p class="weather-label">Current temperature</p>
+                        <p id="current-temperature" class="current-temperature">—</p>
+                        <p id="current-description" class="current-description">Enter your API key to load current conditions.</p>
+                    </div>
+                </div>
+                <div class="forecast-heading">
+                    <h3>Three-day forecast</h3>
+                    <span>°C</span>
+                </div>
+                <ol class="forecast-list" id="forecast-list" aria-label="Three-day temperature forecast">
+                    <li class="forecast-placeholder">Enter your API key to load the forecast.</li>
+                </ol>
+                <form class="weather-key-form" id="weather-form">
+                    <label for="weather-api-key">OpenWeatherMap API key</label>
+                    <div class="weather-form-row">
+                        <input id="weather-api-key" name="api-key" type="password" autocomplete="off" spellcheck="false" required aria-describedby="weather-key-help">
+                        <button type="submit">Load weather</button>
+                    </div>
+                    <p class="weather-help" id="weather-key-help">Use your own key. This page sends it with the weather request and does not save it.</p>
+                </form>
+                <p class="weather-status" id="weather-status" role="status" aria-live="polite">Enter your personal API key to load live Harare weather.</p>
+                <p class="weather-attribution">Weather data from <a href="https://openweathermap.org/" target="_blank" rel="noopener noreferrer">OpenWeatherMap</a>.</p>
+            </section>
+        </div>
+
+        <section class="spotlights-section" aria-labelledby="spotlights-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Good people doing good work</p>
+                    <h2 id="spotlights-title">Member spotlights</h2>
+                </div>
+                <a class="text-link" href="directory.html">Explore the directory <span aria-hidden="true">↗</span></a>
+            </div>
+            <p class="spotlight-intro">Meet a few of the businesses making Harare a more connected place.</p>
+            <div class="spotlights-grid" id="spotlights-grid" aria-live="polite" aria-busy="true"></div>
+            <p class="spotlights-status" id="spotlights-status" role="status" aria-live="polite">Loading member spotlights…</p>
+        </section>
+
+        <section class="membership-banner" id="membership" aria-labelledby="membership-title">
+            <div class="banner-mark" aria-hidden="true">HBC<span>+</span></div>
+            <div class="banner-copy">
+                <p class="eyebrow">There is room for you here</p>
+                <h2 id="membership-title">Let's make Harare's business community stronger.</h2>
+                <p>Connect with fellow business owners and find new ways to grow together.</p>
+            </div>
+            <a class="contact-link" href="join.html">Find out about joining <span aria-hidden="true">↗</span></a>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a class="brand" href="index.html" aria-label="Harare Business Circle home">
+                    <img src="images/favicon.svg" alt="" width="40" height="40">
+                    <span class="brand-copy"><strong>Harare</strong><span>Business Circle</span></span>
+                </a>
+                <p>Local connections. Shared progress.</p>
+            </div>
+            <div class="footer-contact">
+                <h2>Say hello</h2>
+                <p>Harare, Zimbabwe</p>
+                <a href="mailto:hello@hararebusinesscircle.example">hello@hararebusinesscircle.example</a>
+            </div>
+            <div class="footer-course">
+                <p>Created by <strong>Sir Luis Adam</strong></p>
+                <p>WDD 231 · Web Frontend Development</p>
+                <p>Last modified <time id="last-modified" datetime="2026-11-13">November 13, 2026</time></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Harare Business Circle</p>
+            <p>Harare, Zimbabwe</p>
+        </div>
+    </footer>
+</body>
+
+</html>
