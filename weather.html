@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Current weather conditions for Trier, Germany, using the OpenWeatherMap API.">
+    <meta name="author" content="Luis Adam">
+    <meta name="theme-color" content="#123047">
+    <title>OpenWeatherMap API Test | Luis Adam</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/weather.css">
+    <script src="scripts/weather.js" defer></script>
+</head>
+
+<body>
+    <header class="weather-header">
+        <a class="home-link" href="index.html">WDD 231 · Luis Adam</a>
+        <h1>OpenWeatherMap.org API Test</h1>
+        <p>Live current conditions for Trier, Germany</p>
+    </header>
+
+    <main>
+        <section class="weather-card" aria-labelledby="location-title">
+            <h2 id="location-title">Trier, Germany</h2>
+
+            <p class="temperature-line">The current temperature in Trier, Germany is
+                <strong id="current-temp">—</strong>
+            </p>
+
+            <figure class="weather-figure">
+                <img id="weather-icon" src="images/weather-placeholder.svg"
+                    alt="Weather icon will appear after current conditions load." width="128" height="128">
+                <figcaption id="weather-description">Weather conditions will appear here.</figcaption>
+            </figure>
+
+            <form id="weather-form" class="api-key-form">
+                <label for="api-key">Your OpenWeatherMap API key</label>
+                <div class="form-row">
+                    <input id="api-key" name="api-key" type="password" autocomplete="off" spellcheck="false"
+                        required aria-describedby="key-help">
+                    <button type="submit">Get current weather</button>
+                </div>
+                <p id="key-help" class="help-text">The key is sent with the request and is not saved by this page.
+                    Since this activity runs in your browser, treat the key as public while the page is open.</p>
+            </form>
+
+            <p id="weather-status" class="status-message" role="status" aria-live="polite">
+                Enter your personal API key to load the current conditions.
+            </p>
+        </section>
+
+        <p class="location-note">Coordinates: 49.76° N, 6.64° E · Porta Nigra, Trier</p>
+    </main>
+
+    <footer class="weather-footer">
+        <p>Luis Adam | <a href="https://openweathermap.org/">OpenWeatherMap.org</a> |
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+        </p>
+    </footer>
+</body>
+
+</html>
