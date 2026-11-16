@@ -4,9 +4,6 @@ const currentYear = document.querySelector("#current-year");
 const modifiedTime = document.querySelector("#last-modified");
 const spotlightGrid = document.querySelector("#spotlights-grid");
 const spotlightStatus = document.querySelector("#spotlights-status");
-const weatherForm = document.querySelector("#weather-form");
-const weatherKeyInput = document.querySelector("#weather-api-key");
-const weatherSubmit = weatherForm.querySelector("button[type='submit']");
 const weatherResults = document.querySelector("#weather-results");
 const currentWeatherIcon = document.querySelector("#current-weather-icon");
 const currentTemperature = document.querySelector("#current-temperature");
@@ -14,10 +11,7 @@ const currentDescription = document.querySelector("#current-description");
 const forecastList = document.querySelector("#forecast-list");
 const weatherStatus = document.querySelector("#weather-status");
 
-const currentWeatherUrl = "https://api.openweathermap.org/data/2.5/weather";
-const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast";
 const weatherIconUrl = "https://openweathermap.org/img/wn/";
-const harare = { latitude: -17.83, longitude: 31.05 };
 
 currentYear.textContent = new Date().getFullYear();
 const modifiedDate = new Date(document.lastModified);
@@ -144,27 +138,6 @@ async function loadSpotlights() {
     }
 }
 
-function buildWeatherUrl(endpoint, apiKey) {
-    const requestUrl = new URL(endpoint);
-    requestUrl.search = new URLSearchParams({
-        lat: harare.latitude,
-        lon: harare.longitude,
-        units: "metric",
-        appid: apiKey
-    });
-    return requestUrl;
-}
-
-async function fetchWeatherData(endpoint, apiKey) {
-    const response = await fetch(buildWeatherUrl(endpoint, apiKey));
-    if (!response.ok) {
-        const error = new Error(`OpenWeatherMap returned ${response.status}.`);
-        error.status = response.status;
-        throw error;
-    }
-    return response.json();
-}
-
 function localDateKey(unixSeconds, timezoneOffset) {
     return new Date((unixSeconds + timezoneOffset) * 1000).toISOString().slice(0, 10);
 }
@@ -260,35 +233,40 @@ function renderWeather(currentData, forecastData) {
     renderForecast(forecastData, currentData);
 }
 
-async function loadWeather(apiKey) {
+async function loadWeather() {
     weatherStatus.textContent = "Loading Harare weather…";
-    weatherSubmit.disabled = true;
     weatherResults.setAttribute("aria-busy", "true");
 
     try {
-        const [currentData, forecastData] = await Promise.all([
-            fetchWeatherData(currentWeatherUrl, apiKey),
-            fetchWeatherData(forecastUrl, apiKey)
-        ]);
-        renderWeather(currentData, forecastData);
-        weatherStatus.textContent = "Current conditions and the three-day forecast are up to date.";
+        const response = await fetch("data/weather.json", { cache: "no-store" });
+        if (!response.ok) {
+            throw new Error(`Weather data returned ${response.status}.`);
+        }
+
+        const weatherData = await response.json();
+        if (weatherData.error) {
+            const error = new Error("Weather data is not available yet.");
+            error.code = weatherData.error.code;
+            throw error;
+        }
+
+        renderWeather(weatherData.current, weatherData.forecast);
+        const updated = weatherData.updatedAt ? new Date(weatherData.updatedAt) : null;
+        const updateLabel = updated && !Number.isNaN(updated.getTime())
+            ? ` Updated ${new Intl.DateTimeFormat("en", { dateStyle: "medium", timeStyle: "short" }).format(updated)}.`
+            : "";
+        weatherStatus.textContent = `Current conditions and the three-day forecast are up to date.${updateLabel}`;
     } catch (error) {
-        console.error("Unable to load Harare weather:", error);
-        weatherStatus.textContent = error.status === 401
-            ? "OpenWeatherMap did not accept this key. Check it and allow time for a new key to activate."
-            : "Weather could not be loaded. Check your connection and API key, then try again.";
+        if (error.code !== "not_configured") {
+            console.error("Unable to load Harare weather:", error);
+        }
+        weatherStatus.textContent = error.code === "not_configured"
+            ? "Live weather is being set up. Please check again soon."
+            : "Live weather is temporarily unavailable. Please check again soon.";
     } finally {
         weatherResults.setAttribute("aria-busy", "false");
-        weatherSubmit.disabled = false;
     }
 }
 
-weatherForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const apiKey = weatherKeyInput.value.trim();
-    if (apiKey) {
-        loadWeather(apiKey);
-    }
-});
-
 loadSpotlights();
+loadWeather();

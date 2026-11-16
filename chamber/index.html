@@ -105,7 +105,7 @@
                     <div class="current-weather-copy">
                         <p class="weather-label">Current temperature</p>
                         <p id="current-temperature" class="current-temperature">—</p>
-                        <p id="current-description" class="current-description">Enter your API key to load current conditions.</p>
+                        <p id="current-description" class="current-description">Loading current conditions…</p>
                     </div>
                 </div>
                 <div class="forecast-heading">
@@ -113,17 +113,10 @@
                     <span>°C</span>
                 </div>
                 <ol class="forecast-list" id="forecast-list" aria-label="Three-day temperature forecast">
-                    <li class="forecast-placeholder">Enter your API key to load the forecast.</li>
+                    <li class="forecast-placeholder">Loading the forecast…</li>
                 </ol>
-                <form class="weather-key-form" id="weather-form">
-                    <label for="weather-api-key">OpenWeatherMap API key</label>
-                    <div class="weather-form-row">
-                        <input id="weather-api-key" name="api-key" type="password" autocomplete="off" spellcheck="false" required aria-describedby="weather-key-help">
-                        <button type="submit">Load weather</button>
-                    </div>
-                    <p class="weather-help" id="weather-key-help">Use your own key. This page sends it with the weather request and does not save it.</p>
-                </form>
-                <p class="weather-status" id="weather-status" role="status" aria-live="polite">Enter your personal API key to load live Harare weather.</p>
+                <p class="weather-status" id="weather-status" role="status" aria-live="polite">Loading live Harare weather…</p>
+                <p class="weather-help">Weather information is refreshed throughout the day.</p>
                 <p class="weather-attribution">Weather data from <a href="https://openweathermap.org/" target="_blank" rel="noopener noreferrer">OpenWeatherMap</a>.</p>
             </section>
         </div>
