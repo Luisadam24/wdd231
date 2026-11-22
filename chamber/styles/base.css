@@ -183,6 +183,12 @@ h3 {
     border-radius: 5px;
     background: var(--surface);
 }
+.business-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
 
 .business-card h2 {
     margin: 0;

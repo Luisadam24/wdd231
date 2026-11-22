@@ -1,4 +1,3 @@
-
 // Grid and List view
 const businessContainer = document.querySelector("#business-container");
 const gridButton = document.querySelector("#grid-button");
@@ -49,6 +48,8 @@ function displayMembers(members) {
                 <img 
                     src="images/${member.image}" 
                     alt="${member.name}"
+                    width="400"
+                    height="250"
                     loading="lazy"
                 >
 
