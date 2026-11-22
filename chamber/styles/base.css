@@ -321,7 +321,7 @@ body.dark-mode .business-details a {
 }
 
 [hidden] {
-    display: none !important;
+    display: block;
 }
 
 @media (prefers-reduced-motion: no-preference) {
