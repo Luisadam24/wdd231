@@ -183,6 +183,7 @@ h3 {
     border-radius: 5px;
     background: var(--surface);
 }
+
 .business-card img {
     width: 100%;
     height: 180px;
@@ -336,5 +337,15 @@ body.dark-mode .business-details a {
     .view-buttons button,
     .social-links a {
         transition: background-color 150ms ease;
+    }
+}
+
+#business-container {
+    min-height: 1800px;
+}
+
+@media screen and (max-width: 700px) {
+    #business-container {
+        min-height: 4500px;
     }
 }
