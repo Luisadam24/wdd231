@@ -1,24 +1,30 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="author" content="Luis Adam">
     <meta name="description"
         content="Discover Harare's local businesses, upcoming events and community opportunities. Connect with businesses and find ways to support economic growth in Harare, Zimbabwe.">
+
     <meta property="og:title" content="Business Directory | Harare Chamber of Commerce">
     <meta property="og:description"
         content="Looking for a local business in Harare? Explore our directory to discover local shops, services, and organizations in the community.">
     <meta property="og:image" content="images/harare-skyline.jpeg">
-    <meta property="og:url" content="https://luisadam24.github.io/chamber/directory.html">
+    <meta property="og:url" content="https://luisadam24.github.io/wdd231/chamber/directory.html">
     <meta property="og:type" content="website">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
     <title>Business Directory | Harare Chamber of Commerce</title>
+
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -27,7 +33,7 @@
     <script src="scripts/directory.js" defer></script>
 </head>
 
-<>
+<body>
 
     <header class="site-header">
 
@@ -36,10 +42,12 @@
             <span>Harare Chamber of Commerce</span>
         </a>
 
-        <button class="hamburger" id="menu-button" aria-label="Toggle navigation">
+        <button class="hamburger" id="menu-button" aria-label="Toggle navigation"
+            aria-expanded="false">
         </button>
 
-        <button id="theme-button" aria-label="Switch color theme">
+        <button id="theme-button" class="theme-button" aria-label="Switch color theme"
+            aria-pressed="false">
             ◐
         </button>
 
@@ -49,19 +57,19 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li class="current">
-                <a href="directory.html">Directory</a>
+                <a href="directory.html" aria-current="page">Directory</a>
             </li>
             <li><a href="join.html">Join</a></li>
             <li><a href="discover.html">Discover</a></li>
         </ul>
     </nav>
 
-
-
     <main>
         <h1>Directory</h1>
 
-        <section class="directory-section">
+        <section class="directory-section" aria-labelledby="directory-heading">
+
+            <h2 id="directory-heading">Our Business Members</h2>
 
             <div class="view-buttons">
                 <button id="grid-button" class="selected" aria-pressed="true">
@@ -75,7 +83,6 @@
 
             <div id="business-container" class="business-grid">
 
-
                 <!-- 1. Samsung -->
                 <article class="business-card">
                     <h2>Samsung</h2>
@@ -84,10 +91,19 @@
                     <div class="business-details">
                         <img src="images/samsung.jpg" alt="Samsung electronic products">
                         <div>
-                            <p><strong>Email:</strong><a
-                                    href="https://www.samsung.com/africa_en/support/email/"></a>Contact Us</p>
+                            <p>
+                                <strong>Support:</strong>
+                                <a href="https://www.samsung.com/africa_en/support/">
+                                    Contact Samsung
+                                </a>
+                            </p>
                             <p><strong>Phone:</strong> 0860 726 7864</p>
-                            <p><strong>Website:</strong> <a href="https://www.samsung.com/">Visit website</a></p>
+                            <p>
+                                <strong>Website:</strong>
+                                <a href="https://www.samsung.com/">
+                                    Visit website
+                                </a>
+                            </p>
                         </div>
                     </div>
 
@@ -98,7 +114,6 @@
                     </p>
                 </article>
 
-
                 <!-- 2. TV Sales -->
                 <article class="business-card">
                     <h2>TV Sales</h2>
@@ -107,9 +122,13 @@
                     <div class="business-details">
                         <img src="images/tv-sales.jpg" alt="Television sets for sale">
                         <div>
-                            <p><strong>Email:</strong><a href="onlinesalestvsales.co.zw">Official Email</p></a>
                             <p><strong>Phone:</strong> +263 786 195 825</p>
-                            <p><strong>Website:</strong><a href="https://www.tvsales.co.zw">Visit Website</p></a>
+                            <p>
+                                <strong>Website:</strong>
+                                <a href="https://www.tvsales.co.zw">
+                                    Visit website
+                                </a>
+                            </p>
                         </div>
                     </div>
 
@@ -120,7 +139,6 @@
                     </p>
                 </article>
 
-
                 <!-- 3. Standard Chartered -->
                 <article class="business-card">
                     <h2>Standard Chartered</h2>
@@ -129,9 +147,19 @@
                     <div class="business-details">
                         <img src="images/standard.jpg" alt="Standard Chartered banking">
                         <div>
-                            <p><strong>Email:</strong><a href="contactus.zwfbc.co.zw">Contact Us</a></p>
+                            <p>
+                                <strong>Support:</strong>
+                                <a href="https://www.sc.com/">
+                                    Contact Standard Chartered
+                                </a>
+                            </p>
                             <p><strong>Phone:</strong> +97317578299</p>
-                            <p><strong>Website:</strong> <a href="https://www.sc.com/">Visit website</a></p>
+                            <p>
+                                <strong>Website:</strong>
+                                <a href="https://www.sc.com/">
+                                    Visit website
+                                </a>
+                            </p>
                         </div>
                     </div>
 
@@ -142,7 +170,6 @@
                     </p>
                 </article>
 
-
                 <!-- 4. Cafe Nush -->
                 <article class="business-card">
                     <h2>Cafe Nush</h2>
@@ -151,9 +178,13 @@
                     <div class="business-details">
                         <img src="images/cafe-nush.webp" alt="Cafe Nush restaurant">
                         <div>
-                            <p><strong>Email:</strong><a href="infocafenush.co.zw">Cafe Nush</p></a>
                             <p><strong>Phone:</strong> +263 78 369 6353</p>
-                            <p><strong>Website:</strong><a href="https://www.cafenush.co.zw"> Cafe Nush Website</p></a>
+                            <p>
+                                <strong>Website:</strong>
+                                <a href="https://www.cafenush.co.zw">
+                                    Visit Cafe Nush
+                                </a>
+                            </p>
                         </div>
                     </div>
 
@@ -164,7 +195,6 @@
                     </p>
                 </article>
 
-
                 <!-- 5. PlayStation -->
                 <article class="business-card">
                     <h2>PlayStation</h2>
@@ -173,10 +203,24 @@
                     <div class="business-details">
                         <img src="images/play-station.jpg" alt="PlayStation gaming console">
                         <div>
-                            <p><strong>Email:</strong><a href="//www.playstation.com/">PlayStation Support</p></a>
-                            <p><strong>Phone:</strong><a
-                                    href="//www.playstation.com/en-us/support/contact-us/direct/">Contact Us</p></a>
-                            <p><strong>Website:</strong> <a href="https://www.playstation.com/">Visit website</p></a>
+                            <p>
+                                <strong>Support:</strong>
+                                <a href="https://www.playstation.com/en-us/support/">
+                                    PlayStation Support
+                                </a>
+                            </p>
+                            <p>
+                                <strong>Contact:</strong>
+                                <a href="https://www.playstation.com/en-us/support/contact-us/">
+                                    Contact Us
+                                </a>
+                            </p>
+                            <p>
+                                <strong>Website:</strong>
+                                <a href="https://www.playstation.com/">
+                                    Visit website
+                                </a>
+                            </p>
                         </div>
                     </div>
 
@@ -187,7 +231,6 @@
                     </p>
                 </article>
 
-
                 <!-- 6. Hisense Washing Machines -->
                 <article class="business-card">
                     <h2>Hisense Washing Machines</h2>
@@ -196,9 +239,19 @@
                     <div class="business-details">
                         <img src="images/hisense.jpg" alt="Hisense washing machine">
                         <div>
-                            <p><strong>Email:</strong><a href="//www.customercare@hisense-usa.com"> Contact Us</p></a>
+                            <p>
+                                <strong>Support:</strong>
+                                <a href="https://global.hisense.com/">
+                                    Hisense Support
+                                </a>
+                            </p>
                             <p><strong>Phone:</strong> +1 888 935 8880</p>
-                            <p><strong>Website:</strong> <a href="https://global.hisense.com/">Visit website</a></p>
+                            <p>
+                                <strong>Website:</strong>
+                                <a href="https://global.hisense.com/">
+                                    Visit website
+                                </a>
+                            </p>
                         </div>
                     </div>
 
@@ -209,7 +262,6 @@
                     </p>
                 </article>
 
-
                 <!-- 7. Car Sales -->
                 <article class="business-card">
                     <h2>Car Sales</h2>
@@ -218,9 +270,18 @@
                     <div class="business-details">
                         <img src="images/car-sale.jpg" alt="Cars available for sale">
                         <div>
-                            <p><strong>Email:</strong><a href="//www.zimautogmail.com"> Contact Us</p></a>
-                            <p><strong>Phone:</strong><a href="//www.whatsapp.com"> +263785744058</p></a>
-                            <p><strong>Website:</strong><a href="https://www.zimauto.co.zw">Website address</p></a>
+                            <p>
+                                <strong>WhatsApp:</strong>
+                                <a href="https://wa.me/263785744058">
+                                    +263 785 744 058
+                                </a>
+                            </p>
+                            <p>
+                                <strong>Website:</strong>
+                                <a href="https://www.zimauto.co.zw">
+                                    Visit website
+                                </a>
+                            </p>
                         </div>
                     </div>
 
@@ -231,18 +292,27 @@
                     </p>
                 </article>
 
-
                 <!-- 8. Emirates -->
                 <article class="business-card">
                     <h2>Emirates</h2>
                     <p class="tagline">Fly better</p>
 
                     <div class="business-details">
-                        <img src="images/emirates.jpg" alt="Emirates airbus in the sky">
+                        <img src="images/emirates.jpg" alt="Emirates aircraft in the sky">
                         <div>
-                            <p><strong>Email:</strong><a href="premirates.com">Contact Us</p></a>
+                            <p>
+                                <strong>Contact:</strong>
+                                <a href="https://www.emirates.com/">
+                                    Contact Emirates
+                                </a>
+                            </p>
                             <p><strong>Phone:</strong> +971 56 515 1960</p>
-                            <p><strong>Website:</strong> <a href="https://www.emirates.com/">Visit website</a></p>
+                            <p>
+                                <strong>Website:</strong>
+                                <a href="https://www.emirates.com/">
+                                    Visit website
+                                </a>
+                            </p>
                         </div>
                     </div>
 
@@ -253,18 +323,27 @@
                     </p>
                 </article>
 
-
                 <!-- 9. FedEx -->
                 <article class="business-card">
                     <h2>FedEx</h2>
                     <p class="tagline">Where now meets next</p>
 
                     <div class="business-details">
-                        <img src="images/fedex.jpg" alt="FedEx HQ building">
+                        <img src="images/fedex.jpg" alt="FedEx headquarters building">
                         <div>
-                            <p><strong>Email:</strong> <a href="https://www.fedex.com/en-zw">Official Website</a></p>
+                            <p>
+                                <strong>Support:</strong>
+                                <a href="https://www.fedex.com/en-zw">
+                                    FedEx Support
+                                </a>
+                            </p>
                             <p><strong>Phone:</strong> 024252320</p>
-                            <p><strong>Website:</strong> <a href="https://www.fedex.com/">Visit website</a></p>
+                            <p>
+                                <strong>Website:</strong>
+                                <a href="https://www.fedex.com/">
+                                    Visit website
+                                </a>
+                            </p>
                         </div>
                     </div>
 
@@ -280,35 +359,44 @@
 
     </main>
 
-    <footer>
+    <footer class="site-footer">
 
-        <div class="site-contact">
-            <h2>Harare Chamber of Commerce</h2>
-            <p>Harare, Zimbabwe</p>
-            <p>Email: hchamber24@gmail.com</p>
-            <p>Phone: +263 787 272 320</p>
-        </div>
+        <div class="footer-content">
 
-        <div class="social-links">
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                <img src="images/instagram.svg" alt="" width="24" height="24">
-            </a>
-            <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="X">
-                <img src="images/twitter-x.svg" alt="" width="24" height="24">
-            </a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                <img src="images/linkedin.svg" alt="" width="24" height="24">
-            </a>
-        </div>
+            <div class="site-contact">
+                <h2>Harare Chamber of Commerce</h2>
+                <p>Harare, Zimbabwe</p>
+                <p>Email: hchamber24gmail.com</p>
+                <p>Phone: +263 787 272 320</p>
+            </div>
 
-        <div class="footer-project">
-            <p>WDD231 Class Project</p>
-            <p>Developed by Luis Adam</p>
-            <p>&copy; <span id="current-year"></span> Harare Chamber of Commerce</p>
-            <p>Last Modification: <span id="last-modified"></span></p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/"
+                    target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <img src="images/instagram.svg" alt="" width="24" height="24">
+                </a>
+
+                <a href="https://www.twitter.com/"
+                    target="_blank" rel="noopener noreferrer" aria-label="X">
+                    <img src="images/twitter-x.svg" alt="" width="24" height="24">
+                </a>
+
+                <a href="https://www.linkedin.com/"
+                    target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src="images/linkedin.svg" alt="" width="24" height="24">
+                </a>
+            </div>
+
+            <div class="footer-project">
+                <p>WDD231 Class Project</p>
+                <p>Developed by Luis Adam</p>
+                <p>&copy; <span id="current-year"></span> Harare Chamber of Commerce</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </div>
+
         </div>
 
     </footer>
-    </body>
 
+</body>
 </html>
