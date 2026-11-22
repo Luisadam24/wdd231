@@ -1,0 +1,83 @@
+[
+    {
+        "name": "Samsung",
+        "address": "Sam Levy's Village, Borrowdale, Harare, Zimbabwe",
+        "phone": "0860 726 7864",
+        "website": "https://www.samsung.com/",
+        "image": "samsung.jpg",
+        "membership": 3,
+        "description": "Samsung is a global electronics and technology brand known for smartphones, televisions, home appliances and innovative electronic products."
+    },
+    {
+        "name": "TV Sales",
+        "address": "Eastlea, Harare, Zimbabwe",
+        "phone": "+263 786 195 825",
+        "website": "https://www.tvsales.co.zw",
+        "image": "tv-sales.jpg",
+        "membership": 2,
+        "description": "A television retailer offering different television models and entertainment displays for homes and businesses."
+    },
+    {
+        "name": "Standard Chartered",
+        "address": "Africa Unity Square, Harare, Zimbabwe",
+        "phone": "+263 242 758 299",
+        "website": "https://www.sc.com/",
+        "image": "standard.jpg",
+        "membership": 3,
+        "description": "Standard Chartered is an international banking group providing financial services and banking solutions for individuals and businesses."
+    },
+    {
+        "name": "Cafe Nush",
+        "address": "Avondale, Harare, Zimbabwe",
+        "phone": "+263 78 369 6353",
+        "website": "https://www.cafenush.co.zw",
+        "image": "cafe-nush.webp",
+        "membership": 1,
+        "description": "Cafe Nush is a restaurant and cafe offering food, refreshments and a welcoming place for people to enjoy meals and meet friends."
+    },
+    {
+        "name": "PlayStation",
+        "address": "Online services, Harare, Zimbabwe",
+        "phone": "Not available",
+        "website": "https://www.playstation.com/",
+        "image": "play-station.jpg",
+        "membership": 2,
+        "description": "PlayStation is a gaming brand known for its consoles, video games and entertainment services."
+    },
+    {
+        "name": "Hisense Washing Machines",
+        "address": "Borrowdale, Harare, Zimbabwe",
+        "phone": "+1 888 935 8880",
+        "website": "https://global.hisense.com/",
+        "image": "hisense.jpg",
+        "membership": 1,
+        "description": "Hisense manufactures home appliances, including washing machines designed to make household laundry easier and more convenient."
+    },
+    {
+        "name": "Car Sales",
+        "address": "Harare, Zimbabwe",
+        "phone": "+263 785 744 058",
+        "website": "https://www.zimauto.co.zw",
+        "image": "car-sale.jpg",
+        "membership": 2,
+        "description": "An automotive sales business offering vehicles to customers looking for reliable transport and different vehicle options."
+    },
+    {
+        "name": "Emirates",
+        "address": "Harare International Airport, Harare, Zimbabwe",
+        "phone": "+971 56 515 1960",
+        "website": "https://www.emirates.com/",
+        "image": "emirates.jpg",
+        "membership": 3,
+        "description": "Emirates is an international airline providing passenger flights and travel services to destinations around the world."
+    },
+    {
+        "name": "FedEx",
+        "address": "Harare, Zimbabwe",
+        "phone": "024 252 320",
+        "website": "https://www.fedex.com/",
+        "image": "fedex.jpg",
+        "membership": 2,
+        "description": "FedEx is a global transportation and logistics company providing shipping, courier and delivery services."
+    }
+]
