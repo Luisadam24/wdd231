@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Luis Adam">
+    <meta name="description" content="Discover Harare local businesses, community events and local opportunities.">
+
+    <meta property="og:title" content="Home | Harare Chamber of Commerce">
+    <meta property="og:description"
+        content="Connect with Harare businesses and grow your business.">
+    <meta property="og:image" content="https://luisadam24.github.io/wdd231/chamber/images/harare-skyline.jpg">
+    <meta property="og:url" content="https://luisadam24.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <title>Home | Harare Chamber of Commerce</title>
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <a href="index.html" class="brand">
+            <img src="images/buildings-fill.svg" alt="logo">
+            <span>Harare Chamber of Commerce</span>
+        </a>
+
+        <button class="hamburger" id="menu-button" aria-label="Toggle navigation" aria-expanded="false">
+        </button>
+
+        <button id="theme-button" class="theme-button" aria-label="Switch color theme" aria-pressed="false">
+            ◐
+        </button>
+
+    </header>
+
+    <nav class="navigation" id="navigation">
+        <ul>
+            <li class="current"><a href="index.html" aria-current="page">Home</a></li>
+            <li>
+                <a href="directory.html">Directory</a>
+            </li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main>
+    
+        <h1>Harare Chamber of Commerce</h1>
+    
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-heading">
+    
+            <img src="images/harare-hero.webp" alt="View of Harare city, Zimbabwe" width="1024" height="683" loading="lazy">
+    
+            <div class="hero-content">
+                <h2 id="hero-heading">Growing Business. Building Harare.</h2>
+    
+                <p>
+                    Connecting local businesses, creating opportunities
+                    and strengthening our community.
+                </p>
+    
+                <a href="join.html" class="join-button">
+                    Join the Chamber
+                </a>
+            </div>
+    
+        </section>
+    
+        <!-- Current Events -->
+        <section class="events-section" aria-labelledby="events-heading">
+    
+            <h2 id="events-heading">Current Events</h2>
+    
+            <article class="event-card">
+                <h3>Harare Business Networking</h3>
+                <p>
+                    Meet local entrepreneurs, business owners and
+                    professionals to build valuable connections.
+                </p>
+                <p><strong>Location:</strong> Harare, Zimbabwe</p>
+            </article>
+    
+            <article class="event-card">
+                <h3>Small Business Development Workshop</h3>
+                <p>
+                    Learn practical business skills, explore new
+                    opportunities and connect with other entrepreneurs.
+                </p>
+                <p><strong>Location:</strong> Harare, Zimbabwe</p>
+            </article>
+    
+        </section>
+    
+        <!-- Weather -->
+        <section class="weather-section" aria-labelledby="weather-heading">
+    
+            <h2 id="weather-heading">Harare Weather</h2>
+    
+            <div id="current-weather">
+                <p>Loading current weather...</p>
+            </div>
+    
+            <h3>Three-Day Forecast</h3>
+    
+            <div id="weather-forecast">
+                <p>Loading forecast...</p>
+            </div>
+    
+        </section>
+    
+        <!-- Business Spotlights -->
+        <section class="spotlights-section" aria-labelledby="spotlights-heading">
+    
+            <h2 id="spotlights-heading">Business Spotlights</h2>
+    
+            <div id="spotlight-container" class="spotlight-grid">
+                <p>Loading featured businesses...</p>
+            </div>
+    
+        </section>
+    
+    </main>
+
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <div class="site-contact">
+                <h2>Harare Chamber of Commerce</h2>
+                <p>Harare, Zimbabwe</p>
+                <p>Email: hchamber24gmail.com</p>
+                <p>Phone: +263 787 272 320</p>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <img src="images/instagram.svg" alt="" width="24" height="24">
+                </a>
+
+                <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="X">
+                    <img src="images/twitter-x.svg" alt="" width="24" height="24">
+                </a>
+
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src="images/linkedin.svg" alt="" width="24" height="24">
+                </a>
+            </div>
+
+            <div class="footer-project">
+                <p>WDD231 Class Project</p>
+                <p>Developed by Luis Adam</p>
+                <p>&copy; <span id="current-year"></span> Harare Chamber of Commerce</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

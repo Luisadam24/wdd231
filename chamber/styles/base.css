@@ -349,3 +349,163 @@ body.dark-mode .business-details a {
         min-height: 4500px;
     }
 }
+
+/* Main Home page styling */
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main>h1 {
+    text-align: center;
+    margin: 1.5rem 1rem;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--navy-dark);
+}
+
+.hero>img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1024 / 683;
+    object-fit: cover;
+}
+
+.hero-content {
+    padding: 1.5rem;
+    background-color: var(--navy-dark);
+    color: white;
+}
+
+.hero-content h2 {
+    margin-top: 0;
+    font-size: 1.7rem;
+}
+
+.hero-content p {
+    line-height: 1.6;
+}
+
+.join-button {
+    display: inline-block;
+    padding: 0.85rem 1.4rem;
+    margin-top: 0.5rem;
+    background-color: var(--teal);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.join-button:hover {
+    background-color: var(--teal-hover);
+}
+
+/* Homepage Styling */
+
+.events-section,
+.weather-section,
+.spotlights-section {
+    margin: 2rem 1rem;
+    padding: 1.25rem;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.events-section h2,
+.weather-section h2,
+.spotlights-section h2 {
+    color: var(--navy);
+    margin-top: 0;
+}
+
+.event-card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--surface-soft);
+    border-left: 4px solid var(--teal);
+    border-radius: 5px;
+}
+
+.event-card:last-child {
+    margin-bottom: 0;
+}
+
+.event-card h3 {
+    color: var(--navy);
+    margin-top: 0;
+}
+
+.event-card p {
+    line-height: 1.5;
+}
+
+#current-weather {
+    padding: 1rem;
+    background-color: var(--surface-soft);
+    border-radius: 6px;
+    line-height: 1.6;
+}
+
+#weather-forecast {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.forecast-card {
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--surface-soft);
+    border-radius: 6px;
+}
+
+.spotlight-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.spotlight-card {
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--surface-soft);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.spotlight-card img {
+    display: block;
+    width: 100%;
+    max-width: 180px;
+    height: 110px;
+    object-fit: contain;
+    margin: 0 auto 1rem;
+}
+
+.spotlight-card h3 {
+    color: var(--navy);
+}
+
+.spotlight-card p {
+    line-height: 1.5;
+}
+
+.spotlight-card a {
+    color: var(--teal);
+    font-weight: bold;
+}
+
+.join-button:focus-visible,
+.spotlight-card a:focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 3px;
+}
