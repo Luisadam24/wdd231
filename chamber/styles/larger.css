@@ -86,11 +86,6 @@
 /* Home Large Screen Styling */
 
 @media screen and (min-width: 768px) {
-
-    main {
-        max-width: 1200px;
-    }
-
     .hero {
         aspect-ratio: 16 / 7;
     }
@@ -135,7 +130,6 @@
 }
 
 @media screen and (min-width: 1000px) {
-
     .spotlight-grid {
         grid-template-columns: repeat(3, 1fr);
     }

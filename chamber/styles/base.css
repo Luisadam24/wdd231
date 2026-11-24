@@ -352,12 +352,7 @@ body.dark-mode .business-details a {
 
 /* Main Home page styling */
 
-main {
-    width: 100%;
-    margin: 0 auto;
-}
-
-main>h1 {
+.home-page main>h1 {
     text-align: center;
     margin: 1.5rem 1rem;
 }
