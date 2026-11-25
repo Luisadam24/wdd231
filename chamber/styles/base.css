@@ -279,13 +279,11 @@ h3 {
     margin: 5px 0;
     font-size: .9rem;
 }
-
 .social-links {
     display: flex;
     justify-content: center;
     gap: 12px;
 }
-
 .social-links a {
     display: grid;
     width: 44px;
@@ -298,7 +296,6 @@ h3 {
     font-weight: 700;
     text-decoration: none;
 }
-
 body.dark-mode {
     color-scheme: dark;
     --page: #17232c;
@@ -308,25 +305,20 @@ body.dark-mode {
     --muted: #d0dce2;
     --border: #607985;
 }
-
 body.dark-mode h1,
 body.dark-mode .business-card h2 {
     color: white;
 }
-
 body.dark-mode .business-details p {
     color: var(--text);
 }
-
 body.dark-mode .business-details a {
     color: #8fe0d8;
 }
-
 :focus-visible {
     outline: 3px solid var(--focus);
     outline-offset: 3px;
 }
-
 @media (prefers-reduced-motion: no-preference) {
 
     .navigation a,
@@ -335,31 +327,25 @@ body.dark-mode .business-details a {
         transition: background-color 150ms ease;
     }
 }
-
 #business-container {
     min-height: 1800px;
 }
-
 @media screen and (max-width: 700px) {
     #business-container {
         min-height: 4500px;
     }
 }
-
 /* Main Home page styling */
-
 .home-page main>h1 {
     text-align: center;
     margin: 1.5rem 1rem;
 }
-
 .hero {
     position: relative;
     width: 100%;
     overflow: hidden;
     background-color: var(--navy-dark);
 }
-
 .hero>img {
     display: block;
     width: 100%;
@@ -367,22 +353,18 @@ body.dark-mode .business-details a {
     aspect-ratio: 1024 / 683;
     object-fit: cover;
 }
-
 .hero-content {
     padding: 1.5rem;
     background-color: var(--navy-dark);
     color: white;
 }
-
 .hero-content h2 {
     margin-top: 0;
     font-size: 1.7rem;
 }
-
 .hero-content p {
     line-height: 1.6;
 }
-
 .join-button {
     display: inline-block;
     padding: 0.85rem 1.4rem;
@@ -393,13 +375,10 @@ body.dark-mode .business-details a {
     font-weight: bold;
     border-radius: 5px;
 }
-
 .join-button:hover {
     background-color: var(--teal-hover);
 }
-
 /* Homepage Styling */
-
 .events-section,
 .weather-section,
 .spotlights-section {
@@ -409,14 +388,12 @@ body.dark-mode .business-details a {
     border: 1px solid var(--border);
     border-radius: 8px;
 }
-
 .events-section h2,
 .weather-section h2,
 .spotlights-section h2 {
     color: var(--navy);
     margin-top: 0;
 }
-
 .event-card {
     padding: 1rem;
     margin-bottom: 1rem;
@@ -424,47 +401,39 @@ body.dark-mode .business-details a {
     border-left: 4px solid var(--teal);
     border-radius: 5px;
 }
-
 .event-card:last-child {
     margin-bottom: 0;
 }
-
 .event-card h3 {
     color: var(--navy);
     margin-top: 0;
 }
-
 .event-card p {
     line-height: 1.5;
 }
-
 #current-weather {
     padding: 1rem;
     background-color: var(--surface-soft);
     border-radius: 6px;
     line-height: 1.6;
 }
-
 #weather-forecast {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
     margin-top: 1rem;
 }
-
 .forecast-card {
     padding: 1rem;
     text-align: center;
     background-color: var(--surface-soft);
     border-radius: 6px;
 }
-
 .spotlight-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
 }
-
 .spotlight-card {
     padding: 1rem;
     text-align: center;
@@ -472,7 +441,6 @@ body.dark-mode .business-details a {
     border: 1px solid var(--border);
     border-radius: 8px;
 }
-
 .spotlight-card img {
     display: block;
     width: 100%;
@@ -481,33 +449,27 @@ body.dark-mode .business-details a {
     object-fit: contain;
     margin: 0 auto 1rem;
 }
-
 .spotlight-card h3 {
     color: var(--navy);
 }
-
 .spotlight-card p {
     line-height: 1.5;
 }
-
 .spotlight-card a {
     color: var(--teal);
     font-weight: bold;
 }
-
 .join-button:focus-visible,
 .spotlight-card a:focus-visible {
     outline: 3px solid var(--focus);
     outline-offset: 3px;
 }
-
 /* Join Page Styling */
 .join-content {
     display: grid;
     grid-template-columns: 1fr;
     gap: 32px;
 }
-
 .join-section,
 .membership-section {
     padding: 20px;
@@ -515,25 +477,21 @@ body.dark-mode .business-details a {
     border: 1px solid var(--border);
     border-radius: 8px;
 }
-
 .join-section h2,
 .membership-section h2 {
     margin-top: 0;
     color: var(--navy);
 }
-
 .join-section form {
     display: grid;
     gap: 16px;
 }
-
 .join-section label {
     display: grid;
     gap: 6px;
     color: var(--text);
     font-weight: 600;
 }
-
 .join-section input,
 .join-section select,
 .join-section textarea {
@@ -546,11 +504,9 @@ body.dark-mode .business-details a {
     color: var(--text);
     font: inherit;
 }
-
 .join-section textarea {
     resize: vertical;
 }
-
 .join-section input[type="submit"] {
     padding: 14px;
     border: none;
@@ -559,18 +515,15 @@ body.dark-mode .business-details a {
     font-weight: 700;
     cursor: pointer;
 }
-
 .join-section input[type="submit"]:hover {
     background-color: var(--teal-hover);
 }
-
 /* Membership Cards */
 .membership-cards {
     display: grid;
     grid-template-columns: 1fr;
     gap: 16px;
 }
-
 .membership-card {
     padding: 20px;
     background-color: var(--surface-soft);
@@ -579,16 +532,13 @@ body.dark-mode .business-details a {
     border-radius: 6px;
     animation: card-entrance 0.7s ease both;
 }
-
 .membership-card h3 {
     margin-top: 0;
     color: var(--navy);
 }
-
 .membership-card p {
     color: var(--muted);
 }
-
 .membership-link {
     display: inline-block;
     padding: 10px 16px;
@@ -598,27 +548,21 @@ body.dark-mode .business-details a {
     font-weight: 700;
     text-decoration: none;
 }
-
 .membership-link:hover {
     background-color: var(--teal-hover);
 }
-
 /* Membership Card Animation */
-
 @keyframes card-entrance {
     from {
         opacity: 0;
         transform: translateY(20px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
-
 /* Membership Dialogs */
-
 dialog {
     width: min(90%, 500px);
     padding: 24px;
@@ -627,20 +571,16 @@ dialog {
     background-color: var(--surface);
     color: var(--text);
 }
-
 dialog::backdrop {
     background-color: black;
 }
-
 dialog h2 {
     margin-top: 0;
     color: var(--navy);
 }
-
 dialog li {
     margin-bottom: 8px;
 }
-
 .close-modal {
     min-height: 44px;
     padding: 10px 20px;
@@ -652,13 +592,10 @@ dialog li {
     font-weight: 700;
     cursor: pointer;
 }
-
 .close-modal:hover {
     background-color: var(--teal);
 }
-
 /* Reduced Motion */
-
 @media (prefers-reduced-motion: reduce) {
     .membership-card {
         animation: none;
