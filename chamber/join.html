@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Luis Adam">
+    <meta name="description" content="Join Harare's local businesses, community events and local opportunities.">
+
+    <meta property="og:title" content="Join | Harare Chamber of Commerce">
+    <meta property="og:description" content="Connect with Harare businesses and grow your business.">
+    <meta property="og:image" content="https://luisadam24.github.io/wdd231/chamber/images/harare-hero.webp">
+    <meta property="og:url" content="https://luisadam24.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Join | Harare Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body class="join-page">
+
+    <header class="site-header">
+
+        <a href="index.html" class="brand">
+            <img src="images/buildings-fill.svg" alt="">
+            <span>Harare Chamber of Commerce</span>
+        </a>
+
+        <button class="hamburger" id="menu-button" aria-label="Toggle navigation" aria-expanded="false">
+        </button>
+
+        <button id="theme-button" class="theme-button" aria-label="Switch color theme" aria-pressed="false">
+            ◐
+        </button>
+
+    </header>
+
+    <nav class="navigation" id="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li class="current"><a href="join.html" aria-current="page">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>Become a member</h1>
+        <p>Join Harare's business community and discover opportunities for growth.</p>
+
+        <div class="join-content">
+
+            <section class="join-section">
+
+                <h2>Membership Application</h2>
+
+                <form method="get" action="thankyou.html" id="membership-form">
+
+                    <label>
+                        First Name
+                        <input type="text" id="first-name" name="firstName" title="Enter your first name" autocomplete="given-name" required>
+                    </label>
+
+                    <label>
+                        Last Name
+                        <input type="text" id="last-name" name="lastName" title="Enter your last name" autocomplete="family-name" required>
+                    </label>
+
+                    <label>
+                        Organizational Title
+                        <input type="text" id="organization-title" name="organizationTitle" title="Enter your organizational title" autocomplete="organization-title" pattern="[A-Za-z -]{7,}">
+                    </label>
+
+                    <label>
+                        Email Address
+                        <input type="email" id="email" name="email" title="Enter your email address" autocomplete="email" placeholder="example@gmail.com" required>
+                    </label>
+
+                    <label>
+                        Mobile Phone Number
+                        <input type="tel" id="phone" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+                    </label>
+
+                    <label>
+                        Business/Organization Name
+                        <input type="text" id="organization" name="organization" title="Enter your business or organization name" autocomplete="organization" required>
+                    </label>
+
+                    <label>
+                        Membership Level
+                        <select name="membership" id="membership" required>
+                            <option value="">Select a membership level</option>
+                            <option value="np">NP Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Business Description
+                        <textarea name="description" id="description" title="Describe your business or organization" rows="5"></textarea>
+                    </label>
+                    <input type="hidden" name="timestamp" id="timestamp">
+                    <input type="submit" value="Submit Membership Application">
+
+                </form>
+
+            </section>
+
+            <section class="membership-section">
+
+                <h2>Membership Levels</h2>
+
+                <div class="membership-cards">
+
+                    <article class="membership-card">
+                        <h3>NP Membership</h3>
+                        <p>Free membership for non-profit organizations.</p>
+                        <a href="#np-modal" class="membership-link">View Benefits</a>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Bronze Membership</h3>
+                        <p>Affordable opportunities to grow your business.</p>
+                        <a href="#bronze-modal" class="membership-link">View Benefits</a>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Silver Membership</h3>
+                        <p>More visibility, networking and business opportunities.</p>
+                        <a href="#silver-modal" class="membership-link">View Benefits</a>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Gold Membership</h3>
+                        <p>Premium benefits for businesses ready to grow.</p>
+                        <a href="#gold-modal" class="membership-link">View Benefits</a>
+                    </article>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- Membership Dialogs -->
+
+        <dialog id="np-modal">
+            <h2>NP Membership Benefits</h2>
+            <ul>
+                <li>Free membership for non-profit organizations.</li>
+                <li>Access to networking events.</li>
+                <li>Community partnership opportunities.</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="bronze-modal">
+            <h2>Bronze Membership Benefits</h2>
+            <ul>
+                <li>Business listing in the chamber directory.</li>
+                <li>Networking event invitations.</li>
+                <li>Selected training opportunities.</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="silver-modal">
+            <h2>Silver Membership Benefits</h2>
+            <ul>
+                <li>All Bronze membership benefits.</li>
+                <li>Featured business promotion opportunities.</li>
+                <li>Discounted chamber event access.</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="gold-modal">
+            <h2>Gold Membership Benefits</h2>
+            <ul>
+                <li>All Silver membership benefits.</li>
+                <li>Premium business promotion opportunities.</li>
+                <li>Priority event participation.</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <div class="site-contact">
+                <h2>Harare Chamber of Commerce</h2>
+                <p>Harare, Zimbabwe</p>
+                <p>Email: hchamber24gmail.com</p>
+                <p>Phone: +263 787 272 320</p>
+            </div>
+
+            <div class="social-links">
+
+                <a href="https://www.instagram.com/" target="_blank"
+                    rel="noopener noreferrer" aria-label="Instagram">
+                    <img src="images/instagram.svg" alt="" width="24" height="24">
+                </a>
+
+                <a href="https://www.twitter.com/" target="_blank"
+                    rel="noopener noreferrer" aria-label="X">
+                    <img src="images/twitter-x.svg" alt="" width="24" height="24">
+                </a>
+
+                <a href="https://www.linkedin.com/" target="_blank"
+                    rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src="images/linkedin.svg" alt="" width="24" height="24">
+                </a>
+
+            </div>
+
+            <div class="footer-project">
+                <p>WDD231 Class Project</p>
+                <p>Developed by Luis Adam</p>
+                <p>&copy; <span id="current-year"></span> Harare Chamber of Commerce</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

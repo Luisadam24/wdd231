@@ -134,3 +134,22 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+/* Join Page Tablet Layout */
+@media (min-width: 608px) {
+    .membership-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Join Page Desktop Layout */
+@media (min-width: 1000px) {
+    .join-content {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+
+    .membership-cards {
+        grid-template-columns: 1fr;
+    }
+}
