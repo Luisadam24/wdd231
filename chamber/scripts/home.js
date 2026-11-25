@@ -88,12 +88,8 @@ const weatherForecast = document.querySelector("#weather-forecast");
 
 async function getWeather() {
     try {
-        const currentURL =
-            `https://api.openweathermap.org/data/2.5/weather?lat=${LATITUDE}&lon=${LONGITUDE}&units=metric&appid=${API_KEY}`;
-
-        const forecastURL =
-            `https://api.openweathermap.org/data/2.5/forecast?lat=${LATITUDE}&lon=${LONGITUDE}&units=metric&appid=${API_KEY}`;
-
+        const currentURL =`https://api.openweathermap.org/data/2.5/weather?lat=${LATITUDE}&lon=${LONGITUDE}&units=metric&appid=${API_KEY}`;
+        const forecastURL =`https://api.openweathermap.org/data/2.5/forecast?lat=${LATITUDE}&lon=${LONGITUDE}&units=metric&appid=${API_KEY}`;
         const [currentResponse, forecastResponse] = await Promise.all([
             fetch(currentURL),
             fetch(forecastURL)
