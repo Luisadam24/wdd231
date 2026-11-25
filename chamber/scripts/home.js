@@ -74,8 +74,7 @@ async function displaySpotlights() {
 
     } catch (error) {
         console.error("Spotlight error:", error);
-        spotlightContainer.textContent =
-            "Business spotlights are currently unavailable.";
+        spotlightContainer.textContent ="Business spotlights are currently unavailable.";
     }
 }
 
@@ -112,9 +111,7 @@ async function getWeather() {
 
     } catch (error) {
         console.error("Weather error:", error);
-
         currentWeather.textContent ="Current weather is currently unavailable.";
-
         weatherForecast.textContent ="The weather forecast is currently unavailable.";
     }
 }
@@ -164,7 +161,7 @@ function displayForecast(data) {
 
         day.temperatures.push(item.main.temp);
 
-        // Use the forecast closest to midday for the weather icon.
+        // Use the forecast closest to midday for weather icon.
         if (Math.abs(localHour - 12) < day.closestHour) {
             day.selectedWeather = item;
             day.closestHour = Math.abs(localHour - 12);
