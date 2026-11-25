@@ -48,10 +48,9 @@ async function displaySpotlights() {
             name.textContent = member.name;
 
             const membership = document.createElement("p");
-            membership.textContent =
-                Number(member.membership) === 3
-                    ? "Gold Member"
-                    : "Silver Member";
+            membership.textContent = Number(member.membership) === 3
+                ? "Gold Member"
+                : "Silver Member";
 
             const description = document.createElement("p");
             description.textContent = member.description;
@@ -68,15 +67,7 @@ async function displaySpotlights() {
             website.target = "_blank";
             website.rel = "noopener noreferrer";
 
-            card.append(
-                image,
-                name,
-                membership,
-                description,
-                address,
-                phone,
-                website
-            );
+            card.append(image, name, membership, description, address, phone, website);
 
             spotlightContainer.appendChild(card);
         });
@@ -91,10 +82,8 @@ async function displaySpotlights() {
 displaySpotlights();
 
 const API_KEY = "8b704b7bbac0841bce2d4adf6bc8cdee";
-
 const LATITUDE = -17.8252;
 const LONGITUDE = 31.0335;
-
 const currentWeather = document.querySelector("#current-weather");
 const weatherForecast = document.querySelector("#weather-forecast");
 
@@ -124,11 +113,9 @@ async function getWeather() {
     } catch (error) {
         console.error("Weather error:", error);
 
-        currentWeather.textContent =
-            "Current weather is currently unavailable.";
+        currentWeather.textContent ="Current weather is currently unavailable.";
 
-        weatherForecast.textContent =
-            "The weather forecast is currently unavailable.";
+        weatherForecast.textContent ="The weather forecast is currently unavailable.";
     }
 }
 
@@ -139,29 +126,19 @@ function displayCurrentWeather(data) {
     heading.textContent = data.name;
 
     const icon = document.createElement("img");
-    icon.src =
-        `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    icon.src =`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     icon.alt = data.weather[0].description;
 
     const temperature = document.createElement("p");
-    temperature.textContent =
-        `Temperature: ${Math.round(data.main.temp)}°C`;
+    temperature.textContent =`Temperature: ${Math.round(data.main.temp)}°C`;
 
     const description = document.createElement("p");
-    description.textContent =
-        `Conditions: ${data.weather[0].description}`;
+    description.textContent =`Conditions: ${data.weather[0].description}`;
 
     const humidity = document.createElement("p");
-    humidity.textContent =
-        `Humidity: ${data.main.humidity}%`;
+    humidity.textContent =`Humidity: ${data.main.humidity}%`;
 
-    currentWeather.append(
-        heading,
-        icon,
-        temperature,
-        description,
-        humidity
-    );
+    currentWeather.append(heading,icon,temperature,description,humidity);
 }
 
 function displayForecast(data) {
@@ -170,9 +147,7 @@ function displayForecast(data) {
     const dailyForecasts = {};
 
     data.list.forEach(item => {
-        const localDate = new Date(
-            (item.dt + data.city.timezone) * 1000
-        );
+        const localDate = new Date((item.dt + data.city.timezone) * 1000);
 
         const dateKey = localDate.toISOString().slice(0, 10);
         const localHour = localDate.getUTCHours();
@@ -201,28 +176,18 @@ function displayForecast(data) {
     dates.forEach(dateKey => {
         const day = dailyForecasts[dateKey];
         const weather = day.selectedWeather;
-
         const card = document.createElement("article");
         card.classList.add("forecast-card");
-
         const date = document.createElement("h3");
-        date.textContent = new Date(
-            `${dateKey}T12:00:00+02:00`
-        ).toLocaleDateString("en-ZW", {
-            weekday: "long"
-        });
+        date.textContent = new Date(`${dateKey}T12:00:00+02:00`).toLocaleDateString("en-ZW", {weekday: "long"});
 
         const icon = document.createElement("img");
-        icon.src =
-            `https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`;
+        icon.src =`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`;
         icon.alt = weather.weather[0].description;
-
         const description = document.createElement("p");
         description.textContent = weather.weather[0].description;
-
         const high = Math.round(Math.max(...day.temperatures));
         const low = Math.round(Math.min(...day.temperatures));
-
         const temperature = document.createElement("p");
         temperature.textContent = `High: ${high}°C | Low: ${low}°C`;
 
